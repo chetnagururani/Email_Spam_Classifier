@@ -34,6 +34,7 @@ def transform_text(text):
 tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
 model = pickle.load(open('model.pkl', 'rb'))
 
+st.image("image.png", width=700)
 st.title("Email spam Classifier")
 input_mail  = st.text_area("Enter the mail")
 
